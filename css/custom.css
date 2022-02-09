@@ -1,6 +1,49 @@
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito Sans', sans-serif; */
 
+/* ===========================================
+1.RESET 
+*/
+.container-fluid,
+.navbar,
+.navbar-brand,
+.navbar-nav .nav-item .nav-link,
+.navbar-toggler {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-brand {
+	margin: 2px 0 0 -1px;
+}
+
+.navbar-toggler {
+	margin-top: 2px;
+}
+
+/* Font Colors */
+.navbar-nav .nav-item .nav-link {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/* MAIN */
 body {
-    background-color: black;
+	display: flex;
+	justify-content: center;
+}
+
+.main-wrapper {
+	width: 375px;
+	/* color: rgba(255, 255, 255, 0.7); */
+	background: #19191b;
+	padding: 40px 24px 50px 24px;
+}
+/* Navbar */
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+/* Logo */
+.brand-img {
+	width: 115px;
 }

@@ -1,33 +1,138 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO meta tags -->
-    <meta name="keywords" content="Enver, digital studio Enver, digital studio, ui designer, ux designer, development, graphik designer, motion graphik, photography, videography">
-    <meta name="description" content="Enver - best digital studio offering quality services such as UI/UX Design and Development" />
+		<!-- SEO meta tags -->
+		<meta
+			name="keywords"
+			content="Enver, digital studio Enver, digital studio, ui designer, ux designer, development, graphik designer, motion graphik, photography, videography"
+		/>
+		<meta
+			name="description"
+			content="Enver - best digital studio offering quality services such as UI/UX Design and Development"
+		/>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!-- Boostrap CSS -->
-    <link rel="stylesheet" href="">
+		<!-- Boostrap CSS -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/custom.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="./css/custom.css" />
 
-    <!-- Favicon -->
+		<!-- Favicon -->
 
-    <!-- Title -->
-    <title>Enver - digital studio, UI/UX designer, development, photography, videography</title>
-</head>
-<body>
-    <img src="./images/enver-project1.png" alt="">
-    <!-- JavaScript -->
-    <script src=""></script>
-</body>
+		<!-- Title -->
+		<title>
+			Enver - digital studio, UI/UX designer, development, photography,
+			videography
+		</title>
+	</head>
+	<body>
+        <!-- TODO Remove the main wrapper once done with the mobile -->
+		<div class="main-wrapper">
+            <!-- TODO add navbar-expand-lg to navbar once done with the mobile -->
+			<nav class="navbar ">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"
+						><img
+							class="brand-img"
+							src="./images/logo-small.svg"
+							alt=""
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#main-navbar"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class=""
+							><img
+								src="./images/icon-navbar-toggler.svg"
+								alt="navbar toggler"
+						/></span>
+					</button>
+					<div class="collapse navbar-collapse" id="main-navbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="#"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Dropdown
+								</a>
+								<ul
+									class="dropdown-menu"
+									aria-labelledby="navbarDropdown"
+								>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Action</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Another action</a
+										>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Something else here</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled">Disabled</a>
+							</li>
+						</ul>
+						<form class="d-flex">
+							<input
+								class="form-control"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button
+								class="btn btn-outline-success"
+								type="submit"
+							>
+								Search
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- JavaScript -->
+		<script src="./js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
