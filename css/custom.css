@@ -1,9 +1,20 @@
+/* TODO turn px to rems or % */
+/* TODO Add clamp to font-size and % to big paddings and margins */
+/* TODO Hover effects */
 /* font-family: 'Montserrat', sans-serif;
-font-family: 'Nunito Sans', sans-serif; */
+font-family: 'Nunito Sans', sans-serif;
+font-family: "Graphik", sans-serif; */
+@font-face {
+    font-family: "Graphik";
+    src: url("../fonts/GraphikBold.otf");
+    font-weight: 700;
+    font-style: normal;
+}
 
 /* ===========================================
 1.RESET 
 */
+/* TODO remove navbar-brand and toggler??? */
 .container-fluid,
 .navbar,
 .navbar-brand,
@@ -13,6 +24,68 @@ font-family: 'Nunito Sans', sans-serif; */
 	padding: 0;
 }
 
+.hero {
+    padding-top: 4.15rem;
+}
+
+.hero-information {
+	
+}
+
+input,
+button,
+.btn,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ===========================================
+2.TYPOGRAPHY, FONT COLORS, BUTTONS
+*/
+/* Typography */
+.title {
+    font-family: "Graphik", sans-serif;
+    font-size: 42px;
+    line-height: 150%; 
+	padding-bottom: 21px;
+}
+
+/* Font Colors */
+body {
+	color: white;
+}
+
+.navbar-nav .nav-item .nav-link,
+p {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	line-height: 150%;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons */
+.btn {
+	width: 166px;
+	height: 44px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16.0889px;
+	font-weight: 600;
+	line-height: 22px;
+	color: white;
+	background: #5454D4;
+	border-radius: 0;
+	margin-top: 35px;
+}
+
+.btn span {
+	padding-left: 12px;
+}
+
+
+/* ===========================================
+3.NAVBAR 
+*/
 .navbar-brand {
 	margin: 2px 0 0 -1px;
 }
@@ -21,13 +94,11 @@ font-family: 'Nunito Sans', sans-serif; */
 	margin-top: 2px;
 }
 
-/* Font Colors */
-.navbar-nav .nav-item .nav-link {
-	color: rgba(255, 255, 255, 0.7);
-}
+
 
 /* MAIN */
 body {
+    /* TODO remove display and justify once done with the mobile */
 	display: flex;
 	justify-content: center;
 }
@@ -47,3 +118,44 @@ body {
 .brand-img {
 	width: 115px;
 }
+
+/* Hero */
+/* Hero Image */
+.hero-img-container {
+	position: relative;
+	margin-top: 97px;
+    margin-left: 10px;
+}
+
+.hero-img {
+	width: 94.5%;
+}
+
+.hero-icon {
+	position: absolute;
+}
+
+.hero-icon-zig-zag {
+	top: -2px;
+	left: -11px;
+	Width: 62px;
+}
+
+.hero-icon-double-circles {
+	top: -25px;
+    right: 18px;
+	Width: 36px;
+}
+
+.hero-icon-double-polygons {
+	bottom: -39px;
+    left: -10px;
+	Width: 65px;
+}
+
+.hero-icon-plus {
+	bottom: 25px;
+    right: 8px;
+	Width: 39px;
+}
+
