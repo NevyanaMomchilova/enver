@@ -1,8 +1,8 @@
 /* TODO turn px to rems or % */
 /* TODO Add clamp to font-size and % to big paddings and margins */
 /* TODO Hover effects */
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Nunito Sans', sans-serif;
+/* font-family: "Montserrat", sans-serif;
+font-family: "Nunito Sans", sans-serif;
 font-family: "Graphik", sans-serif; */
 @font-face {
     font-family: "Graphik";
@@ -28,10 +28,6 @@ font-family: "Graphik", sans-serif; */
     padding-top: 4.15rem;
 }
 
-.hero-information {
-	
-}
-
 input,
 button,
 .btn,
@@ -46,9 +42,13 @@ select {
 /* Typography */
 .title {
     font-family: "Graphik", sans-serif;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 150%; 
 	padding-bottom: 21px;
+}
+
+.main-title {
+	font-size: 42px;
 }
 
 /* Font Colors */
@@ -58,7 +58,7 @@ body {
 
 .navbar-nav .nav-item .nav-link,
 p {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: "Nunito Sans", sans-serif;
 	font-size: 16px;
 	line-height: 150%;
 	color: rgba(255, 255, 255, 0.7);
@@ -68,7 +68,7 @@ p {
 .btn {
 	width: 166px;
 	height: 44px;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: "Nunito Sans", sans-serif;
 	font-size: 16.0889px;
 	font-weight: 600;
 	line-height: 22px;
