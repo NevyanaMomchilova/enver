@@ -38,128 +38,163 @@
 		</title>
 	</head>
 	<body>
-        <!-- TODO Remove the main wrapper once done with the mobile -->
-		<div class="main-wrapper">
-            <!-- TODO add navbar-expand-lg to navbar once done with the mobile -->
-			<nav class="navbar ">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#"
+		<!-- TODO Add rows and cols -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"
+					><img
+						class="brand-img"
+						src="./images/logo-small.svg"
+						alt=""
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#main-navbar"
+					aria-controls="main-navbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class=""
 						><img
-							class="brand-img"
-							src="./images/logo-small.svg"
-							alt=""
-					/></a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#main-navbar"
-						aria-controls="main-navbar"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class=""
-							><img
-								src="./images/icon-navbar-toggler.svg"
-								alt="navbar toggler"
-						/></span>
-					</button>
-					<div class="collapse navbar-collapse" id="main-navbar">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a
-									class="nav-link active"
-									aria-current="page"
-									href="#"
-									>Home</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="navbarDropdown"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Dropdown
-								</a>
-								<ul
-									class="dropdown-menu"
-									aria-labelledby="navbarDropdown"
-								>
-									<li>
-										<a class="dropdown-item" href="#"
-											>Action</a
-										>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#"
-											>Another action</a
-										>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a class="dropdown-item" href="#"
-											>Something else here</a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link disabled">Disabled</a>
-							</li>
-						</ul>
-						<form class="d-flex">
-							<input
-								class="form-control"
-								type="search"
-								placeholder="Search"
-								aria-label="Search"
-							/>
-							<button
-								class="btn btn-outline-success"
-								type="submit"
+							src="./images/icon-navbar-toggler.svg"
+							alt="navbar toggler"
+					/></span>
+				</button>
+				<div class="collapse navbar-collapse" id="main-navbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="#"
+								>Home</a
 							>
-								Search
-							</button>
-						</form>
-					</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Dropdown
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdown"
+							>
+								<li>
+									<a class="dropdown-item" href="#">Action</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Another action</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a class="dropdown-item" href="#"
+										>Something else here</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled">Disabled</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input
+							class="form-control"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-success" type="submit">
+							Search
+						</button>
+					</form>
 				</div>
-			</nav>
+			</div>
+		</nav>
 
-            <!-- Hero Section -->
-            <section class="hero container-fluid">
-                <div class="hero-information">
-                    <h1 class="title main-title text-white">Build Your Awesome Platform</h1>
-                    <p>Enver studio is a digital studio that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p>
-					<button class="btn">Our Services<span><img src="./images/icon-arrow-right-up.svg" alt="right up arrow"></span></button>
-                </div>
-				<div class="hero-img-container">
-					<!-- <img class="d-none d-sm-block" src="./images/enver-digital-studio-man-desktop.png" alt="digital studio man enver"> -->
-					<img class="hero-img" src="./images/enver-digital-studio-man-mobile.png" alt="digital studio man enver">
-					<img class="hero-icon hero-icon-zig-zag" src="./images/icon-zig-zag.svg" alt="zig zag">
-					<img class="hero-icon hero-icon-double-circles" src="./images/icon-double-circles.svg" alt="two circles">
-					<img class="hero-icon hero-icon-double-polygons" src="./images/icon-double-polygons.svg" alt="two polygons">
-					<img class="hero-icon hero-icon-plus" src="./images/icon-plus.svg" alt="plus">
-				</div>
-            </section>
+		<!-- Hero Section -->
+		<section class="hero container-fluid">
+			<div class="hero-information">
+				<h1 class="title main-title">
+					Build Your Awesome Platform
+				</h1>
+				<p>
+					Enver studio is a digital studio that offers several
+					services such as UI/UX Design to developers, we will provide
+					the best service for those of you who use our services.
+				</p>
+				<button class="btn">
+					Our Services<span
+						><img
+							src="./images/icon-arrow-right-up.svg"
+							alt="right up arrow"
+					/></span>
+				</button>
+			</div>
+			<div class="hero-img-container">
+				<img
+					class="d-none d-sm-block"
+					src="./images/enver-digital-studio-man-desktop.png"
+					alt="digital studio man enver"
+				/>
+				<img
+					class="hero-img d-sm-none"
+					src="./images/enver-digital-studio-man-mobile.png"
+					alt="digital studio man enver"
+				/>
+				<img
+					class="hero-icon hero-icon-zig-zag"
+					src="./images/icon-zig-zag.svg"
+					alt="zig zag"
+				/>
+				<img
+					class="hero-icon hero-icon-double-circles"
+					src="./images/icon-double-circles.svg"
+					alt="two circles"
+				/>
+				<img
+					class="hero-icon hero-icon-double-polygons"
+					src="./images/icon-double-polygons.svg"
+					alt="two polygons"
+				/>
+				<img
+					class="hero-icon hero-icon-plus"
+					src="./images/icon-plus.svg"
+					alt="plus"
+				/>
+			</div>
+		</section>
 
-            <!-- About Section -->
-			<section class="about container-fluid">
+		<!-- About Section -->
+		<section class="about container-fluid">
+			<div class="about-information">
 				<h1>Why Enver Is The Best Choice?</h1>
-				<p>Watch this one minute video so you understand why you should use our services!</p>
-				
-			</section>
-            <!-- Services Section -->
-            <!-- Portfolio Section -->
-            <!-- Contact Section -->
-            <!-- Footer -->
-		</div>
+				<p>
+					Watch this one minute video so you understand why you should
+					use our services!
+				</p>
+			</div>
+			<div class="video-vontainer ratio ratio-16x9">
+				<video src="./videos/Enver.mp4"></video>
+			</div>
+		</section>
+		<!-- Services Section -->
+		<!-- Portfolio Section -->
+		<!-- Contact Section -->
+		<!-- Footer -->
 		<!-- JavaScript -->
 		<script src="./js/bootstrap.bundle.min.js"></script>
 	</body>

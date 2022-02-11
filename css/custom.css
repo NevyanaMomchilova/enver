@@ -14,7 +14,6 @@ font-family: "Graphik", sans-serif; */
 /* ===========================================
 1.RESET 
 */
-/* TODO remove navbar-brand and toggler??? */
 .container-fluid,
 .navbar,
 .navbar-brand,
@@ -25,7 +24,7 @@ font-family: "Graphik", sans-serif; */
 }
 
 .hero {
-    padding-top: 4.15rem;
+    padding-top: 4.1rem;
 }
 
 input,
@@ -42,13 +41,13 @@ select {
 /* Typography */
 .title {
     font-family: "Graphik", sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 150%; 
-	padding-bottom: 21px;
+	padding-bottom: 1.374rem;
 }
 
 .main-title {
-	font-size: 42px;
+	font-size: 2.625rem;
 }
 
 /* Font Colors */
@@ -59,27 +58,27 @@ body {
 .navbar-nav .nav-item .nav-link,
 p {
 	font-family: "Nunito Sans", sans-serif;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 150%;
 	color: rgba(255, 255, 255, 0.7);
 }
 
 /* Buttons */
 .btn {
-	width: 166px;
-	height: 44px;
+	width: 10.37rem;
+	height: 2.7rem;
 	font-family: "Nunito Sans", sans-serif;
-	font-size: 16.0889px;
+	font-size: 1.002rem;
 	font-weight: 600;
-	line-height: 22px;
+	line-height: 1.375rem;
 	color: white;
 	background: #5454D4;
 	border-radius: 0;
-	margin-top: 35px;
+	margin-top: 2.19rem;
 }
 
 .btn span {
-	padding-left: 12px;
+	padding-left: 0.74rem;
 }
 
 
@@ -87,27 +86,20 @@ p {
 3.NAVBAR 
 */
 .navbar-brand {
-	margin: 2px 0 0 -1px;
+	margin: 0.09rem 0 0 -0.0625rem;
 }
 
 .navbar-toggler {
-	margin-top: 2px;
+	margin-top: 0.09rem;
 }
 
 
 
 /* MAIN */
 body {
-    /* TODO remove display and justify once done with the mobile */
-	display: flex;
-	justify-content: center;
-}
-
-.main-wrapper {
-	width: 375px;
 	/* color: rgba(255, 255, 255, 0.7); */
 	background: #19191b;
-	padding: 40px 24px 50px 24px;
+	padding: 2.5rem 1.5rem 3.125rem 1.5rem;
 }
 /* Navbar */
 .navbar-toggler:focus {
@@ -116,15 +108,15 @@ body {
 
 /* Logo */
 .brand-img {
-	width: 115px;
+	width: 7.1875rem;
 }
 
 /* Hero */
 /* Hero Image */
 .hero-img-container {
 	position: relative;
-	margin-top: 97px;
-    margin-left: 10px;
+	margin-top: 6.07rem;
+    margin-left: 0.63rem;
 }
 
 .hero-img {
@@ -136,26 +128,26 @@ body {
 }
 
 .hero-icon-zig-zag {
-	top: -2px;
-	left: -11px;
-	Width: 62px;
+	top: -0.09rem;
+	left: -0.69rem;
+	width: 3.875rem;
 }
 
 .hero-icon-double-circles {
-	top: -25px;
-    right: 18px;
-	Width: 36px;
+	top: -1.53rem;
+    right: 1.16rem;
+	width: 2.25rem;
 }
 
 .hero-icon-double-polygons {
-	bottom: -39px;
-    left: -10px;
-	Width: 65px;
+	bottom: -2.45rem;
+    left: -0.625rem;
+	width: 4.06rem;
 }
 
 .hero-icon-plus {
-	bottom: 25px;
-    right: 8px;
-	Width: 39px;
+	bottom: 1.56rem;
+    right: 0.5rem;
+	width: 2.4rem;
 }
 
