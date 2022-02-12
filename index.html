@@ -38,7 +38,6 @@
 		</title>
 	</head>
 	<body>
-		<!-- TODO Add rows and cols -->
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#"
@@ -128,9 +127,7 @@
 		<!-- Hero Section -->
 		<section class="hero container-fluid">
 			<div class="hero-information">
-				<h1 class="title main-title">
-					Build Your Awesome Platform
-				</h1>
+				<h1 class="main-title">Build Your Awesome Platform</h1>
 				<p>
 					Enver studio is a digital studio that offers several
 					services such as UI/UX Design to developers, we will provide
@@ -156,22 +153,22 @@
 					alt="digital studio man enver"
 				/>
 				<img
-					class="hero-icon hero-icon-zig-zag"
+					class="geometric-icon hero-icon hero-icon-zig-zag"
 					src="./images/icon-zig-zag.svg"
 					alt="zig zag"
 				/>
 				<img
-					class="hero-icon hero-icon-double-circles"
+					class="geometric-icon hero-icon-double-circles"
 					src="./images/icon-double-circles.svg"
 					alt="two circles"
 				/>
 				<img
-					class="hero-icon hero-icon-double-polygons"
+					class="geometric-icon hero-icon-double-polygons"
 					src="./images/icon-double-polygons.svg"
 					alt="two polygons"
 				/>
 				<img
-					class="hero-icon hero-icon-plus"
+					class="geometric-icon hero-icon-plus"
 					src="./images/icon-plus.svg"
 					alt="plus"
 				/>
@@ -187,15 +184,168 @@
 					use our services!
 				</p>
 			</div>
-			<div class="video-vontainer ratio ratio-16x9">
-				<video src="./videos/Enver.mp4"></video>
+			<div class="video-container ratio ratio-16x9">
+				<video class="video">
+					<source src="./videos/Enver.mp4" type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+				<button class="btn-play-pause">
+					<img
+						class="icon-play"
+						src="./images/icon-button-play.svg"
+						alt="play video icon"
+					/>
+					<img
+						class="icon-pause"
+						src="./images/icons8-pause-30.png"
+						alt="pause video icon"
+					/>
+				</button>
 			</div>
 		</section>
 		<!-- Services Section -->
+		<section class="services container-fluid">
+			<h1 class="services-title">The Service We Provide For You</h1>
+			<div class="services-cards">
+				<!-- Development -->
+				<div class="services-card">
+					<div
+						class="card-img-container card-img-container-development"
+					>
+						<img
+							src="./images/icon-enver-development.svg"
+							class="card-img"
+							alt="enver services development icon"
+						/>
+					</div>
+					<div class="card-information text-center">
+						<h2 class="">Development</h2>
+						<p class="card-text">
+							Create a platform with the best and coolest quality
+							from us.
+						</p>
+					</div>
+				</div>
+				<!-- UI/UX Designer -->
+				<div class="services-card">
+					<div
+						class="card-img-container card-img-container-development"
+					>
+						<img
+							src="./images/icon-enver-ui-ux-design.svg"
+							class="card-img"
+							alt="enver services development icon"
+						/>
+					</div>
+					<div class="card-information text-center">
+						<h2 class="card-title">UI/UX Designer</h2>
+						<p class="card-text">
+							We provide UI/UX Design services, and of course with
+							the best quality
+						</p>
+					</div>
+				</div>
+				<!-- Graphik Designer -->
+				<div class="services-card">
+					<div
+						class="card-img-container card-img-container-development"
+					>
+						<img
+							src="./images/icon-enver-graphik-design.svg"
+							class="card-img"
+							alt="enver services development icon"
+						/>
+					</div>
+					<div class="card-information text-center">
+						<h2 class="card-title">Graphik Designer</h2>
+						<p class="card-text">
+							We provide Graphic Design services, with the best
+							designers
+						</p>
+					</div>
+				</div>
+				<!-- Motion Graphik -->
+				<div class="services-card">
+					<div
+						class="card-img-container card-img-container-development"
+					>
+						<img
+							src="./images/icon-enver-motion-graphik.svg"
+							class="card-img"
+							alt="enver services development icon"
+						/>
+					</div>
+					<div class="card-information text-center">
+						<h2 class="card-title">Motion Graphik</h2>
+						<p class="card-text">
+							Create a platform with the best and coolest quality
+							from us.
+						</p>
+					</div>
+				</div>
+				<!-- Photography -->
+				<div class="services-card">
+					<div
+						class="card-img-container card-img-container-development"
+					>
+						<img
+							src="./images/icon-enver-photography.svg"
+							class="card-img"
+							alt="enver services development icon"
+						/>
+					</div>
+					<div class="card-information text-center">
+						<h2 class="card-title">Photography</h2>
+						<p class="card-text">
+							We provide Photography services, and of course with
+							the best quality
+						</p>
+					</div>
+				</div>
+				<!-- Videography -->
+				<div class="services-card">
+					<div
+						class="card-img-container card-img-container-development"
+					>
+						<img
+							src="./images/icon-enver-videography.svg"
+							class="card-img"
+							alt="enver services development icon"
+						/>
+					</div>
+					<div class="card-information text-center">
+						<h2 class="card-title">Videography</h2>
+						<p class="card-text">
+							Create a platform with the best and coolest quality
+							from us.
+						</p>
+					</div>
+				</div>
+			</div>
+			<img
+				class="geometric-icon services-icon-double-polygons"
+				src="./images/icon-double-polygons.svg"
+				alt="two polygons"
+			/>
+			<img
+				class="geometric-icon services-icon-plus-up"
+				src="./images/icon-plus.svg"
+				alt="plus"
+			/>
+			<img
+				class="geometric-icon services-icon-plus-down"
+				src="./images/icon-plus.svg"
+				alt="plus"
+			/>
+		</section>
 		<!-- Portfolio Section -->
+		<section class="portfolio container-fluid">
+			<h1>Our Awesome Portofolio</h1>
+		</section>
 		<!-- Contact Section -->
 		<!-- Footer -->
 		<!-- JavaScript -->
 		<script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="./js/custom.js"></script>
 	</body>
 </html>

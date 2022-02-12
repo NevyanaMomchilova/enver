@@ -1,30 +1,48 @@
 /* TODO turn px to rems or % */
 /* TODO Add clamp to font-size and % to big paddings and margins */
-/* TODO Hover effects */
+/* TODO Hover effects, transition effects */
 /* font-family: "Montserrat", sans-serif;
 font-family: "Nunito Sans", sans-serif;
 font-family: "Graphik", sans-serif; */
 @font-face {
-    font-family: "Graphik";
-    src: url("../fonts/GraphikBold.otf");
-    font-weight: 700;
-    font-style: normal;
+	font-family: "Graphik";
+	src: url("../fonts/GraphikBold.otf");
+	font-weight: 700;
+	font-style: normal;
 }
 
 /* ===========================================
 1.RESET 
 */
-.container-fluid,
+/* Main Paddings and Margins */
+body {
+	padding: 2.5rem 1.5rem 3.125rem 1.5rem;
+}
+
 .navbar,
+.navbar .container-fluid,
 .navbar-brand,
 .navbar-nav .nav-item .nav-link,
-.navbar-toggler {
+.navbar-toggler,
+.container-fluid {
 	margin: 0;
 	padding: 0;
 }
 
+.container-fluid {
+	padding-top: 9rem;
+}
+
 .hero {
-    padding-top: 4.1rem;
+	padding-top: 4.1rem;
+}
+
+.services {
+	padding-top: 8.93rem;
+}
+
+.portfolio {
+	padding-top: 6.68rem;
 }
 
 input,
@@ -32,18 +50,30 @@ button,
 .btn,
 textarea,
 select {
-    font: inherit;
+	font: inherit;
 }
 
 /* ===========================================
 2.TYPOGRAPHY, FONT COLORS, BUTTONS
 */
 /* Typography */
-.title {
-    font-family: "Graphik", sans-serif;
-    font-size: 2.25rem;
-    line-height: 150%; 
+h1 {
+	font-family: "Graphik", sans-serif;
+	font-size: 2.25rem;
+	line-height: 150%;
 	padding-bottom: 1.374rem;
+}
+
+h2 {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 1.41rem;
+	line-height: 136%;
+	font-weight: 600;
+	padding: 1.32rem 0 1rem 0;
+}
+
+.services-title {
+	margin-bottom: 4.66rem;
 }
 
 .main-title {
@@ -63,6 +93,13 @@ p {
 	color: rgba(255, 255, 255, 0.7);
 }
 
+.card-text {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 1rem;
+	line-height: 160%;
+	color: rgba(255, 255, 255, 0.7);
+}
+
 /* Buttons */
 .btn {
 	width: 10.37rem;
@@ -72,7 +109,7 @@ p {
 	font-weight: 600;
 	line-height: 1.375rem;
 	color: white;
-	background: #5454D4;
+	background: #5454d4;
 	border-radius: 0;
 	margin-top: 2.19rem;
 }
@@ -81,9 +118,14 @@ p {
 	padding-left: 0.74rem;
 }
 
+/* Other */
+.geometric-icon {
+	position: absolute;
+}
+
 
 /* ===========================================
-3.NAVBAR 
+3.Navbar 
 */
 .navbar-brand {
 	margin: 0.09rem 0 0 -0.0625rem;
@@ -93,13 +135,9 @@ p {
 	margin-top: 0.09rem;
 }
 
-
-
 /* MAIN */
 body {
-	/* color: rgba(255, 255, 255, 0.7); */
 	background: #19191b;
-	padding: 2.5rem 1.5rem 3.125rem 1.5rem;
 }
 /* Navbar */
 .navbar-toggler:focus {
@@ -116,15 +154,11 @@ body {
 .hero-img-container {
 	position: relative;
 	margin-top: 6.07rem;
-    margin-left: 0.63rem;
+	margin-left: 0.63rem;
 }
 
 .hero-img {
 	width: 94.5%;
-}
-
-.hero-icon {
-	position: absolute;
 }
 
 .hero-icon-zig-zag {
@@ -135,19 +169,115 @@ body {
 
 .hero-icon-double-circles {
 	top: -1.53rem;
-    right: 1.16rem;
+	right: 1.16rem;
 	width: 2.25rem;
 }
 
 .hero-icon-double-polygons {
 	bottom: -2.45rem;
-    left: -0.625rem;
+	left: -0.625rem;
 	width: 4.06rem;
 }
 
 .hero-icon-plus {
 	bottom: 1.56rem;
-    right: 0.5rem;
+	right: 0.5rem;
 	width: 2.4rem;
 }
 
+/* ===========================================
+4.About Section
+*/
+.video-container {
+	position: relative;
+	margin-top: 3rem;
+}
+
+.btn-play-pause {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #5454d4;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: none;
+	border-radius: 50%;
+}
+
+.icon-play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0.75rem;
+	height: 0.75rem;
+}
+
+.icon-pause {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0.75rem;
+	height: 0.75rem;
+}
+
+
+/* ===========================================
+5.Services Section
+*/
+.services {
+	position: relative;
+}
+
+.services-cards,
+.services-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.services-card {
+	width: 16rem;
+	background-color: transparent;
+	margin-bottom: 7.63rem;
+}
+
+.card-img-container {
+	position: relative;
+	width: 4.31rem;
+	height: 4.31rem;
+	border-radius: 50%;
+}
+
+.card-img-container-development {
+	background: rgba(84, 84, 212, 0.1);
+}
+
+.card-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2rem;
+}
+
+.services-icon-double-polygons {
+	top: 4.19rem;
+    left: -0.25rem;
+	width: 4.06rem;
+}
+
+.services-icon-plus-up {
+	top: 14.63rem;
+    right: -0.88rem;
+    width: 1.85rem;
+}
+
+.services-icon-plus-down {
+	bottom: 1.63rem;
+    left: -0.125rem;
+    width: 1.85rem;
+}
