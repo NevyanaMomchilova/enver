@@ -1,6 +1,7 @@
 /* TODO turn px to rems or % */
 /* TODO Add clamp to font-size and % to big paddings and margins */
 /* TODO Hover effects, transition effects */
+/* TODO create table of content */
 /* font-family: "Montserrat", sans-serif;
 font-family: "Nunito Sans", sans-serif;
 font-family: "Graphik", sans-serif; */
@@ -12,9 +13,8 @@ font-family: "Graphik", sans-serif; */
 }
 
 /* ===========================================
-1.RESET 
+1.Reset, Main Paddings And Margins
 */
-/* Main Paddings and Margins */
 body {
 	padding: 2.5rem 1.5rem 3.125rem 1.5rem;
 }
@@ -29,12 +29,12 @@ body {
 	padding: 0;
 }
 
-.container-fluid {
-	padding-top: 9rem;
-}
-
 .hero {
 	padding-top: 4.1rem;
+}
+
+.about {
+	padding-top: 9rem;
 }
 
 .services {
@@ -42,7 +42,16 @@ body {
 }
 
 .portfolio {
-	padding-top: 6.68rem;
+	padding-top: 4.26rem;
+}
+
+/* ===========================================
+2.Typography, Font Colors, Buttons
+*/
+/* Typography and Colors*/
+body {
+	color: white;
+	background: #19191b;
 }
 
 input,
@@ -53,10 +62,6 @@ select {
 	font: inherit;
 }
 
-/* ===========================================
-2.TYPOGRAPHY, FONT COLORS, BUTTONS
-*/
-/* Typography */
 h1 {
 	font-family: "Graphik", sans-serif;
 	font-size: 2.25rem;
@@ -72,17 +77,12 @@ h2 {
 	padding: 1.32rem 0 1rem 0;
 }
 
-.services-title {
-	margin-bottom: 4.66rem;
-}
-
 .main-title {
 	font-size: 2.625rem;
 }
 
-/* Font Colors */
-body {
-	color: white;
+.services-title {
+	margin-bottom: 4.66rem;
 }
 
 .navbar-nav .nav-item .nav-link,
@@ -118,38 +118,37 @@ p {
 	padding-left: 0.74rem;
 }
 
-/* Other */
+/* ===========================================
+3.Layout
+*/
+
 .geometric-icon {
 	position: absolute;
 }
 
-
 /* ===========================================
-3.Navbar 
+4.Navbar
 */
 .navbar-brand {
 	margin: 0.09rem 0 0 -0.0625rem;
+}
+
+.brand-img {
+	width: 7.1875rem;
 }
 
 .navbar-toggler {
 	margin-top: 0.09rem;
 }
 
-/* MAIN */
-body {
-	background: #19191b;
-}
-/* Navbar */
 .navbar-toggler:focus {
 	box-shadow: none;
 }
 
-/* Logo */
-.brand-img {
-	width: 7.1875rem;
-}
 
-/* Hero */
+/* ===========================================
+5.Hero
+*/
 /* Hero Image */
 .hero-img-container {
 	position: relative;
@@ -185,8 +184,9 @@ body {
 	width: 2.4rem;
 }
 
+
 /* ===========================================
-4.About Section
+6.About Section
 */
 .video-container {
 	position: relative;
@@ -224,9 +224,8 @@ body {
 	height: 0.75rem;
 }
 
-
 /* ===========================================
-5.Services Section
+7.Services Section
 */
 .services {
 	position: relative;
@@ -266,18 +265,76 @@ body {
 
 .services-icon-double-polygons {
 	top: 4.19rem;
-    left: -0.25rem;
+	left: -0.25rem;
 	width: 4.06rem;
 }
 
 .services-icon-plus-up {
 	top: 14.63rem;
-    right: -0.88rem;
-    width: 1.85rem;
+	right: -0.88rem;
+	width: 1.85rem;
 }
 
 .services-icon-plus-down {
 	bottom: 1.63rem;
-    left: -0.125rem;
-    width: 1.85rem;
+	left: -0.125rem;
+	width: 1.85rem;
+}
+
+/* ===========================================
+8.Portfolio Section
+*/
+.portfolio {
+	position: relative;
+	height: 748px;
+}
+
+.carousel {
+	position: absolute;
+	top: 226px;
+    left: -24px;
+}
+
+.carousel-item-img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 375px;
+	height: 294px;
+	background: #1e1e20;
+	border-radius: 14px;
+}
+
+.carousel-item-img {
+	width: 327px;
+	border-radius: 12px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	top: 344px;
+	width: 38.21px;
+	height: 38.21px;
+	border-radius: 50%;
+	background-color: #5454D4;
+}
+
+.carousel-control-prev {
+	left: 142px;
+}
+
+.carousel-control-next {
+	right: 143px;
+}
+
+.portfolio-icon-zig-zag {
+	bottom: 4.7rem;
+    left: 0.5rem;
+	width: 3.875rem;
+}
+
+.portfolio-icon-double-circles {
+	top: 7.75rem;
+    right: 0.5rem;
+	width: 2.5rem;
+	transform: rotate(-20.89deg);
 }
